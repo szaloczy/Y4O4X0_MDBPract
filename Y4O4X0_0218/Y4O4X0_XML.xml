@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cegek xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noschemaLocation="Y4O4X0_XMLSchema.xsd">
+    <ceg ckod="1">
+        <nev>Kiss Pista Kft</nev>
+        <cim>
+            <varos>Mezőnyárád</varos>
+            <utca>Kossuth út</utca>
+            <hazszam>23</hazszam>
+        </cim>
+        <tulajdonos tkod="1">
+            <nev>Kiss Pista</nev> 
+            <eletkor>45</eletkor>
+            <vegzettseg>Villamosmérnök</vegzettseg>
+        </tulajdonos>
+        <gyakornok gykod="1">
+            <nev>Kiss Tamás</nev>
+            <gyakorlat gykod="1">
+                <kezdet>2022 Szeptember 8</kezdet>
+                <idotartam>8 hét</idotartam>
+            </gyakorlat>
+            <mentor>Tompos József</mentor>
+        </gyakornok>
+        <fejleszto fkod="1">
+            <nev>Tompos József</nev>
+            <reszleg>IT</reszleg>
+            <vegzettseg>Mérnökinformatikus</vegzettseg>
+        </fejleszto>
+        <projekt pkod="1">
+            <osszeg>3500000</osszeg>
+            <hatarido>2030 január 23</hatarido>
+            <prioritas>Magas</prioritas>
+        </projekt>
+        <megrendelo mkod="1">
+            <nev>Szabó Tibor</nev>
+            <email>szabo@gmail.com</email>
+            <cim>
+                <varos>Miskolc</varos>
+                <utca>Petőfi utca</utca>
+                <hazszam>11</hazszam>
+            </cim>
+        </megrendelo>
+    </ceg>
+</cegek>
