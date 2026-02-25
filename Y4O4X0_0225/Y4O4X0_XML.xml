@@ -26,6 +26,7 @@
         <fejleszto fkod="1">
             <nev>Tompos József</nev>
             <reszleg>IT</reszleg>
+            <fizetes>600000</fizetes>
             <vegzettseg>Mérnökinformatikus</vegzettseg>
         </fejleszto>
 
@@ -72,18 +73,21 @@
         <fejleszto fkod="1">
             <nev>Szatmári Béla</nev>
             <reszleg>IT</reszleg>
+            <fizetes>520000</fizetes>
             <vegzettseg>Bsc Mérnökinformatikus</vegzettseg>
         </fejleszto>
 
          <fejleszto fkod="2">
             <nev>Pintér Csaba</nev>
             <reszleg>IT</reszleg>
+            <fizetes>660000</fizetes>
             <vegzettseg>Bsc Mérnökinformatikus</vegzettseg>
         </fejleszto>
 
          <fejleszto fkod="3">
             <nev>Látó Jenő</nev>
             <reszleg>IT</reszleg>
+            <fizetes>560000</fizetes>
             <vegzettseg>Bsc Programtervező informatikus</vegzettseg>
         </fejleszto>
 
@@ -96,7 +100,7 @@
         <projekt pkod="2" ckod="c2">
             <osszeg>4500000</osszeg>
             <hatarido>2027 december 23</hatarido>
-            <prioritas>közepes</prioritas>
+            <prioritas>Közepes</prioritas>
         </projekt>
 
         <megrendelo mkod="1" pkod="1">

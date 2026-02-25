@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns="http://www.w3.org/2001/XMLSchema"
+            elementFormDefault="qualified"
+>
+
+    <!--Common types-->
+    <xs:element name="vendeglatas">
+    <xs:complexType >
+        <xs:sequence>
+            <xs:element name="etterem" type="etteremTipus" maxOccurs="unbounded">
+            <xs:element name="foszakacs" type="foszakacsTipus" maxOccurs="unbounded">
+            <xs:element name="szakacs" type="etteremTipus" maxOccurs="unbounded">
+            <xs:element name="gyakornok" type="gyakornokTipus" maxOccurs="unbounded">
+            <xs:element name="vendeg" type="vendegTipus" maxOccurs="unbounded">
+            <xs:element name="rendeles" type="rendelesTipus" maxOccurs="unbounded">
+        </xs:sequence>        
+    </xs:complexType>
+
+    <xs:complexType name="cimTipus">
+        <xs:sequence>
+            <xs:element name="varos" type="xs:string"/>
+            <xs:element name="utca" type="xs:string"/>
+            <xs:element name="hazszam" type="xs:string"/>
+        </xs:sequence>
+    <xs:complexType>
+
+    <xs:complexType name="foszakacsTipus">
+        <xs:sequence>
+            <xs:element name="nev" type="xs:string"/>
+            <xs:element name="eletkor" type="xs:string"/>
+            <xs:element name="vegzettseg" type="xs:string" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="fkod" type="xs:string" use="required"/>
+        <xs:attribute name="e_f" type="xs:string" use="required"/>
+    </xs:complexType>
+
+
+    <!-- key -->
+
+    <xs:keyref refer="etterem_kulcs" name="etterem_idegen_kulcs">
+        <xs:selector xpath="rendeles" />
+        <xs:field xpath="@e_v_e"/>
+    </xs:keyref>
+
+    <xs:keyref refer="vendeg_kulcs" name="vendeg_idegen_kulcs">
+        <xs:selector xpath="rendeles" />
+        <xs:field xpath="@e_v_v"/>
+    </xs:keyref>
+
+    <xs:keyref refer="etterem_kulcs" name="etterem_foszakacs_idegen_kulcs">
+        <xs:selector xpath="foszakacs"/>
+        <xs:field xpath="@e_f"/>
+    </xs:keyref>
+
+    <xs:keyref refer="vendeg_kulcs" name="vendeg_idegen_kulcs">
+        <xs:selector xpath="rendeles" />
+        <xs:field xpath="@e_v_v"/>
+    </xs:keyref>
+    <xs:element>
+</xs:schema>

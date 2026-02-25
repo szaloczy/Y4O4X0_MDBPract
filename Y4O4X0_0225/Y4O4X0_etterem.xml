@@ -12,21 +12,21 @@
 
         <foszakacs szkod="sz1">
             <nev>Szabó József</nev>
-            <eletekor>55</eletkor>
-            <vegztettseg>OKJ szakács</vegzettseg>
-            <vegztettseg>Vendéglátó</vegzettseg>
+            <eletkor>55</eletkor>
+            <vegzettseg>OKJ szakács</vegzettseg>
+            <vegzettseg>Vendéglátó</vegzettseg>
         </foszakacs>
 
         <szakacs szkod="sz1">
             <nev>Nagy István</nev>
             <reszleg></reszleg>
-            <vegztettseg>OKJ szakács</vegzettseg>
+            <vegzettseg>OKJ szakács</vegzettseg>
         </szakacs>
 
         <szakacs szkod="sz2">
             <nev>Dobó Zoltán</nev>
             <reszleg></reszleg>
-            <vegztettseg>OKJ szakács</vegzettseg>
+            <vegzettseg>OKJ szakács</vegzettseg>
         </szakacs>
 
         <gyakornok gykod="gy1">
@@ -75,8 +75,8 @@
 
         <foszakacs fkod="f1">
             <nev>Kiss Tibor</nev>
-            <eletekor>34</eletkor>
-            <vegztettseg>OKJ szakács</vegzettseg>
+            <eletkor>34</eletkor>
+            <vegzettseg>OKJ szakács</vegzettseg>
         </foszakacs>
 
         <gyakornok gykod="gy1">

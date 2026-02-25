@@ -16,28 +16,36 @@
         <xs:complexType name="GyarkolatType">
             <xs:sequence>
                 <xs:element name="kezdet" type="xs:date"/>
-                <xs:element name="idotartam" tpye="xs:string">
+                <xs:element name="idotartam" tpye="xs:string"/>
             </xs:sequence>
         </xs:complexType>
 
         <xs:simpleType name="PrioritasType">
-            <xs:restriction base="xs:integer">
-                <xs:minInclusive value="1"/>
-                <xs:maxInclusive value="5"/>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Magas"/>
+                <xs:enumeration value="Közepes"/>
+                <xs:enumeration value="Alacsony"/>
             </xs:restriction>
         </xs:simpleType>
 
         <xs:simpleType name="OsszegType">
             <xs:restriction>
-                <xs:minInclusive value="150000">
-                <xs:maxInclusive value="30000000">
+                <xs:minInclusive value="150000"/>
+                <xs:maxInclusive value="30000000"/>
             </xs:restriction>
         </xs:simpleType>
 
         <xs:simpleType name="EletkorType">
             <xs:restriction>
-                <xs:minInclusive value="18">
-                <xs:maxInclusive value="75">
+                <xs:minInclusive value="18"/>
+                <xs:maxInclusive value="75"/>
+            </xs:restriction>
+        </xs:simpleType>
+
+        <xs:simpleType name="FizetesType">
+            <xs:restriction base="xs:integer">
+                <xs:minInclusive value="500000"/>
+                <xs:maxInclusive value="2500000"/>
             </xs:restriction>
         </xs:simpleType>
 
@@ -67,6 +75,13 @@
                 <xs:element name="gyakorlat" type="xs:GyakorlatType"/>
                 <xs:element name="mentor" type="xs:string"/>
             </xs:sequence>
-        <xs:complexType>
+            <xs:attribute name="gykod" type="xs:integer" use="required">
+        </xs:complexType>
+
+        <xs:complexType name="fejlesztoType">
+            <xs:sequence>
+
+            </xs:sequence>
+        </xs:ComplexType>
    
 </xs:schema>
