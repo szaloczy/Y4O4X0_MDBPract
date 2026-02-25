@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<vendeglatas>
+    <etterem ekod="e1">
+        <nev>Gundel bádog</nev>
+        <cim>
+            <varos>Budapest</varos>
+            <utca>petőfi utca</utca>
+            <hazszam>23</hazszam>
+        </cim>
+        <csillag>5</csillag>
+
+        <foszakacs szkod="sz1">
+            <nev>Szabó József</nev>
+            <eletekor>55</eletkor>
+            <vegztettseg>OKJ szakács</vegzettseg>
+            <vegztettseg>Vendéglátó</vegzettseg>
+        </foszakacs>
+
+        <szakacs szkod="sz1">
+            <nev>Nagy István</nev>
+            <reszleg></reszleg>
+            <vegztettseg>OKJ szakács</vegzettseg>
+        </szakacs>
+
+        <szakacs szkod="sz2">
+            <nev>Dobó Zoltán</nev>
+            <reszleg></reszleg>
+            <vegztettseg>OKJ szakács</vegzettseg>
+        </szakacs>
+
+        <gyakornok gykod="gy1">
+            <nev>Kiss Péter</nev>
+            <gyakorlat>
+                <kezdet>2022 január 8</kezdet>
+                <idotartam>8 hét</idotartam>
+            </gyakorlat>
+            <muszak>délelőtt</muszak>
+        </gyakornok>
+
+        <vendeg vkod="v1">
+            <nev>Jászakai Tibor</nev>
+            <eletkor>34</eletkor>
+            <cim>
+                <varos>Budapest</varos>
+                <utca>Gyors kocsi utca</utca>
+                <hazszam>23</hazszam>
+            </cim>
+        </vendeg>
+
+          <vendeg vkod="v2">
+            <nev>Jászakai Tibor</nev>
+            <eletkor>45</eletkor>
+            <cim>
+                <varos>Budapest</varos>
+                <utca>Kossuth utca</utca>
+                <hazszam>11</hazszam>
+            </cim>
+        </vendeg>
+
+        <rendeles rkod="r1" ekod="e1">
+             <osszeg>25000</osszeg>
+             <etel>Rántott hús</etel>
+        </rendeles>
+    </etterem>
+
+    <etterem ekod="e2">
+        <nev>Etna pizzeria</nev>
+        <cim>
+            <varos>Nyékládháza</varos>
+            <utca>vasút utca</utca>
+            <hazszam>34</hazszam>
+        </cim>
+        <csillag>5</csillag>
+
+        <foszakacs fkod="f1">
+            <nev>Kiss Tibor</nev>
+            <eletekor>34</eletkor>
+            <vegztettseg>OKJ szakács</vegzettseg>
+        </foszakacs>
+
+        <gyakornok gykod="gy1">
+            <nev>Timári Péter</nev>
+            <gyakorlat>
+                <kezdet>2023 január 34</kezdet>
+                <idotartam>6 hét</idotartam>
+            </gyakorlat>
+            <muszak>délután</muszak>
+        </gyakornok>
+
+        <vendeg vkod="v1">
+            <nev>Kerepesi Máté</nev>
+            <eletkor>28</eletkor>
+            <cim>
+                <varos>Máyli</varos>
+                <utca>Móricz Zsigmond</utca>
+                <hazszam>44</hazszam>
+            </cim>
+        </vendeg>
+
+        <rendeles rkod="r2" ekod="e2">
+             <osszeg>15000</osszeg>
+             <etel>Rakott krumpli</etel>
+        </rendeles>
+    </etterem>
+</vendeglatas>

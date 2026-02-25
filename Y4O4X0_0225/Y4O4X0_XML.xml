@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cegek xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noschemaLocation="Y4O4X0_XMLSchema.xsd">
+    <ceg ckod="1">
+        <nev>Kiss Pista Kft</nev>
+        <cim>
+            <varos>Mezőnyárád</varos>
+            <utca>Kossuth út</utca>
+            <hazszam>23</hazszam>
+        </cim>
+
+        <tulajdonos tkod="1">
+            <nev>Kiss Pista</nev> 
+            <eletkor>45</eletkor>
+            <vegzettseg>Villamosmérnök</vegzettseg>
+        </tulajdonos>
+
+        <gyakornok gykod="1">
+            <nev>Szocló Tamás</nev>
+            <gyakorlat gykod="1">
+                <kezdet>2022 Szeptember 8</kezdet>
+                <idotartam>8 hét</idotartam>
+            </gyakorlat>
+            <mentor>Tompos József</mentor>
+        </gyakornok>
+
+        <fejleszto fkod="1">
+            <nev>Tompos József</nev>
+            <reszleg>IT</reszleg>
+            <vegzettseg>Mérnökinformatikus</vegzettseg>
+        </fejleszto>
+
+        <projekt pkod="1" ckod="c1">
+            <osszeg>3500000</osszeg>
+            <hatarido>2030 január 23</hatarido>
+            <prioritas>Magas</prioritas>
+        </projekt>
+
+        <megrendelo mkod="1" pkod="1">
+            <nev>Szabó Tibor</nev>
+            <email>szabo@gmail.com</email>
+            <cim>
+                <varos>Miskolc</varos>
+                <utca>Petőfi utca</utca>
+                <hazszam>11</hazszam>
+            </cim>
+        </megrendelo>
+    </ceg>
+
+    <ceg ckod="2">
+        <nev>Ütvefuró Bt</nev>
+        <cim>
+            <varos>Budapest</varos>
+            <utca>Petőfi út</utca>
+            <hazszam>30</hazszam>
+        </cim>
+
+        <tulajdonos tkod="1">
+            <nev>Nagy József</nev> 
+            <eletkor>55</eletkor>
+            <vegzettseg>Bsc Gépjárműmérnök</vegzettseg>
+        </tulajdonos>
+
+        <gyakornok gykod="1">
+            <nev>Turóczi Mátyás</nev>
+            <gyakorlat gykod="1">
+                <kezdet>2026 Szeptember 15</kezdet>
+                <idotartam>12 hét</idotartam>
+            </gyakorlat>
+            <mentor>Szatmári Béla</mentor>
+        </gyakornok>
+
+        <fejleszto fkod="1">
+            <nev>Szatmári Béla</nev>
+            <reszleg>IT</reszleg>
+            <vegzettseg>Bsc Mérnökinformatikus</vegzettseg>
+        </fejleszto>
+
+         <fejleszto fkod="2">
+            <nev>Pintér Csaba</nev>
+            <reszleg>IT</reszleg>
+            <vegzettseg>Bsc Mérnökinformatikus</vegzettseg>
+        </fejleszto>
+
+         <fejleszto fkod="3">
+            <nev>Látó Jenő</nev>
+            <reszleg>IT</reszleg>
+            <vegzettseg>Bsc Programtervező informatikus</vegzettseg>
+        </fejleszto>
+
+        <projekt pkod="1" ckod="c2">
+            <osszeg>2200000</osszeg>
+            <hatarido>2030 január 23</hatarido>
+            <prioritas>Magas</prioritas>
+        </projekt>
+
+        <projekt pkod="2" ckod="c2">
+            <osszeg>4500000</osszeg>
+            <hatarido>2027 december 23</hatarido>
+            <prioritas>közepes</prioritas>
+        </projekt>
+
+        <megrendelo mkod="1" pkod="1">
+            <nev>Rakaczki Sándor</nev>
+            <email>rakacz@gmail.com</email>
+            <cim>
+                <varos>Sajópetri</varos>
+                <utca>Szirma utca</utca>
+                <hazszam>5</hazszam>
+            </cim>
+        </megrendelo>
+
+        <megrendelo mkod="1" pkod="1">
+            <nev>Fegyverneki Csaba</nev>
+            <email>csaba@gmail.com</email>
+            <cim>
+                <varos>Budakeszi</varos>
+                <utca>Dobó utca</utca>
+                <hazszam>15</hazszam>
+            </cim>
+        </megrendelo>
+    </ceg>
+</cegek>
