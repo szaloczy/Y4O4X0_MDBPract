@@ -28,6 +28,54 @@ attributeFormDefault="unqualified">
                 <xs:field xpath="@tkod"></xs:field>
             </xs:key>
 
+            <xs:key name="gyakornok_kulcs">
+                <xs:selector xpath="gyakornok"/>
+                <xs:field xpath="@gykod"/>
+            </xs:key>
+
+            <xs:key name="fejleszto_kulcs">
+                <xs:selector xpath="fejleszto"/>
+                <xs:field xpath="@fkod"/>
+            </xs:key>
+
+            <xs:key name="megrendelo_kulcs">
+                <xs:selector xpath="megrendelo"/>
+                <xs:field xpath="@mkod"/>
+            </xs:key>
+
+            <!--Foreign Keys-->
+
+            <xs:keyref refer="ceg_kulcs" name="ceg_idegen_kulcs">
+                <xs:selector xpath="projekt"/>
+                <xs:field xpath="@c_v_p"/>
+            </xs:keyref>
+
+            <xs:keyref refer="megrendelo_kulcs" name="megrendelo_idegen_kulcs">
+                <xs:selector xpath="projekt"/>
+                <xs:field xpath="@m_p"/>
+            </xs:keyref>
+
+            <xs:keyref refer="ceg_kulcs" name="ceg_tulajdonos_idegen_kulcs">
+                <xs:selector xpath="tulajdonos"/>
+                <xs:field xpath="@c_t"/>
+            </xs:keyref>
+
+            <xs:keyref refer="ceg_kulcs" name="ceg_gyakornok_idegen_kulcs">
+                <xs:selector xpath="gyakornok"/>
+                <xs:field xpath="@c_gy"/>
+            </xs:keyref>
+
+            <xs:keyref refer="ceg_kulcs" name="ceg_fejleszto_idegen_kulcs">
+                <xs:selector xpath="fejleszto"/>
+                <xs:field xpath="@c_f"/>
+            </xs:keyref>
+
+
+            <!--1:1-->
+            <xs:unique name="egyedi_kulcs_tulajdonos">
+                <xs:selector xpath="tulajdonos"/>
+                <xs:field xpath="@c_t"/>
+            </xs:unique>
         </xs:element>
 
         <!--Common types-->
