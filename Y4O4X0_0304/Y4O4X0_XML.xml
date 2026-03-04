@@ -95,14 +95,13 @@
         <nev>Számlázó alkalamzás fejlesztés</nev>
         <osszeg>5000000</osszeg>
         <hatarido>2025-10-15</hatarido>
-        <prioritas>3</prioritas>
+        <prioritas>Közepes</prioritas>
     </projekt>
 
     <projekt c_v_p="2" m_p="M2">
         <nev>Webshop fejlesztés</nev>
         <osszeg>12000000</osszeg>
         <hatarido>2026-01-20</hatarido>
-        <prioritas>5</prioritas>
+        <prioritas>Magas</prioritas>
     </projekt>
-
 </cegek>

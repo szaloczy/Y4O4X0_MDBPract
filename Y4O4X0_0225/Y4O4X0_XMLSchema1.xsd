@@ -95,13 +95,6 @@ attributeFormDefault="unqualified">
             </xs:sequence>
         </xs:complexType>
 
-        <xs:simpleType name="PrioritasTipus">
-            <xs:restriction base="xs:int">
-                <xs:minInclusive value="1"/>
-                <xs:maxInclusive value="5"/>
-            </xs:restriction>
-        </xs:simpleType>
-
         <xs:simpleType name="OsszegTipus">
             <xs:restriction base="xs:integer">
                 <xs:minInclusive value="150000"/>
@@ -123,7 +116,7 @@ attributeFormDefault="unqualified">
             </xs:restriction>
         </xs:simpleType>
 
-        <xs:simpleType name="PrioritastTipus">
+        <xs:simpleType name="PrioritasTipus">
             <xs:restriction base="xs:string">
                 <xs:enumeration value="Magas"/>
                 <xs:enumeration value="Közepes"/>
