@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cegek xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Y4O4X0_XMLSchema.xsd">
+<cegek xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
     <!-- ===== CÉGEK ===== -->
     <ceg ckod="1">
@@ -31,7 +31,7 @@
         <mentor>Szabó Béla</mentor>
     </gyakornok>
 
-    <gyakornok gykod="GY2" c_gy="1">
+    <gyakornok gykod="GY2" c_gy="2">
         <nev>Tóth Eszter</nev>
         <gyakorlat>
             <kezdet>2024-07-10</kezdet>
@@ -83,7 +83,7 @@
         <vegzettseg>Programtervező informatikus</vegzettseg>
     </fejleszto>
 
-    <fejleszto fkod="F2" c_f="1">
+    <fejleszto fkod="F2" c_f="2">
         <nev>Horváth Márton</nev>
         <Reszleg>Frontend</Reszleg>
         <fizetes>720000</fizetes>

@@ -147,7 +147,7 @@ attributeFormDefault="unqualified">
                 <xs:element name="vegzettseg" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
             </xs:sequence>
             <xs:attribute name="tkod" type="xs:string" use="required"/>
-            <xs:attribute name="c_t" type="xs:string" use="required"/>
+            <xs:attribute name="c_t" type="xs:int" use="required"/>
         </xs:complexType>
 
         <xs:complexType name="GyakornokTipus">
@@ -157,7 +157,7 @@ attributeFormDefault="unqualified">
                 <xs:element name="mentor" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
             </xs:sequence>
             <xs:attribute name="gykod" type="xs:string" use="required"/>
-            <xs:attribute name="c_gy" type="xs:string" use="required"/>
+            <xs:attribute name="c_gy" type="xs:int" use="required"/>
         </xs:complexType>
 
         <xs:complexType name="FejlesztoTipus">
@@ -168,7 +168,7 @@ attributeFormDefault="unqualified">
                 <xs:element name="vegzettseg" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
             </xs:sequence>
             <xs:attribute name="fkod" type="xs:string" use="required"/>
-            <xs:attribute name="c_f" type="xs:string" use="required"/>
+            <xs:attribute name="c_f" type="xs:int" use="required"/>
         </xs:complexType>
 
         <xs:complexType name="megrendeloTipus">
@@ -187,7 +187,7 @@ attributeFormDefault="unqualified">
                 <xs:element name="hatarido" type="xs:string"/>
                 <xs:element name="prioritas" type="PrioritasTipus"/>
             </xs:sequence>
-            <xs:attribute name="c_v_p" type="xs:string" use="required"/>
+            <xs:attribute name="c_v_p" type="xs:int" use="required"/>
             <xs:attribute name="m_p" type="xs:string" use="required"/>
         </xs:complexType>
 

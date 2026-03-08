@@ -8,10 +8,10 @@ attributeFormDefault="unqualified">
             <xs:complexType>
                 <xs:sequence>
                     <xs:element name="ceg" type="CegTipus" maxOccurs="unbounded"/>
-                    <xs:element name="tulajdonos" type="TulajdonosTipus" maxOccurs="unbounded"/>
                     <xs:element name="gyakornok" type="GyakornokTipus" maxOccurs="unbounded"/>
-                    <xs:element name="fejleszto" type="FejlesztoTipus" maxOccurs="unbounded"/>
+                    <xs:element name="tulajdonos" type="TulajdonosTipus" maxOccurs="unbounded"/>
                     <xs:element name="megrendelo" type="megrendeloTipus" maxOccurs="unbounded"/>
+                    <xs:element name="fejleszto" type="FejlesztoTipus" maxOccurs="unbounded"/>
                     <xs:element name="projekt" type="projektTipus" maxOccurs="unbounded"/>
                 </xs:sequence>
             </xs:complexType>
@@ -95,13 +95,6 @@ attributeFormDefault="unqualified">
             </xs:sequence>
         </xs:complexType>
 
-        <xs:simpleType name="PrioritasTipus">
-            <xs:restriction base="xs:int">
-                <xs:minInclusive value="1"/>
-                <xs:maxInclusive value="5"/>
-            </xs:restriction>
-        </xs:simpleType>
-
         <xs:simpleType name="OsszegTipus">
             <xs:restriction base="xs:integer">
                 <xs:minInclusive value="150000"/>
@@ -123,11 +116,17 @@ attributeFormDefault="unqualified">
             </xs:restriction>
         </xs:simpleType>
 
-        <xs:simpleType name="PrioritastTipus">
+        <xs:simpleType name="PrioritasTipus">
             <xs:restriction base="xs:string">
                 <xs:enumeration value="Magas"/>
                 <xs:enumeration value="Közepes"/>
                 <xs:enumeration value="Alacsony"/>
+            </xs:restriction>
+        </xs:simpleType>
+
+        <xs:simpleType name="IdotartamTipus">
+            <xs:restriction base="xs:string">
+                <xs:pattern value="\d+ hét" />
             </xs:restriction>
         </xs:simpleType>
 
@@ -147,7 +146,7 @@ attributeFormDefault="unqualified">
                 <xs:element name="eletkor" type="EletkorTipus"/>
                 <xs:element name="vegzettseg" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
             </xs:sequence>
-            <xs:attribute name="tkod" type="xs:int" use="required"/>
+            <xs:attribute name="tkod" type="xs:string" use="required"/>
             <xs:attribute name="c_t" type="xs:int" use="required"/>
         </xs:complexType>
 
@@ -158,7 +157,7 @@ attributeFormDefault="unqualified">
                 <xs:element name="mentor" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
             </xs:sequence>
             <xs:attribute name="gykod" type="xs:string" use="required"/>
-            <xs:attribute name="c_gy" type="xs:string" use="required"/>
+            <xs:attribute name="c_gy" type="xs:int" use="required"/>
         </xs:complexType>
 
         <xs:complexType name="FejlesztoTipus">
@@ -169,7 +168,7 @@ attributeFormDefault="unqualified">
                 <xs:element name="vegzettseg" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
             </xs:sequence>
             <xs:attribute name="fkod" type="xs:string" use="required"/>
-            <xs:attribute name="c_f" type="xs:string" use="required"/>
+            <xs:attribute name="c_f" type="xs:int" use="required"/>
         </xs:complexType>
 
         <xs:complexType name="megrendeloTipus">
@@ -183,11 +182,12 @@ attributeFormDefault="unqualified">
 
         <xs:complexType name="projektTipus">
             <xs:sequence>
+                <xs:element name="nev" type="xs:string"/>
                 <xs:element name="osszeg" type="OsszegTipus"/>
                 <xs:element name="hatarido" type="xs:string"/>
                 <xs:element name="prioritas" type="PrioritasTipus"/>
             </xs:sequence>
-            <xs:attribute name="c_v_p" type="xs:string" use="required"/>
+            <xs:attribute name="c_v_p" type="xs:int" use="required"/>
             <xs:attribute name="m_p" type="xs:string" use="required"/>
         </xs:complexType>
 

@@ -31,7 +31,7 @@
         <mentor>Szabó Béla</mentor>
     </gyakornok>
 
-    <gyakornok gykod="GY2" c_gy="2">
+    <gyakornok gykod="GY2" c_gy="1">
         <nev>Tóth Eszter</nev>
         <gyakorlat>
             <kezdet>2024-07-10</kezdet>
@@ -83,7 +83,7 @@
         <vegzettseg>Programtervező informatikus</vegzettseg>
     </fejleszto>
 
-    <fejleszto fkod="F2" c_f="2">
+    <fejleszto fkod="F2" c_f="1">
         <nev>Horváth Márton</nev>
         <Reszleg>Frontend</Reszleg>
         <fizetes>720000</fizetes>
