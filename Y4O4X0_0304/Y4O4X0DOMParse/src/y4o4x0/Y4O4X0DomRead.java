@@ -64,6 +64,9 @@ public class Y4O4X0DomRead {
 
         printFoszakacs(doc);
         printSzakacs(doc);
+        printGyakornok(doc);
+        printVendeg(doc);
+        printRendeles(doc);
     }
 
     private static void printFoszakacs(Document doc) {
@@ -90,11 +93,8 @@ public class Y4O4X0DomRead {
                 System.out.println("Életkor: " + age);
 
                 NodeList nList2 = element.getElementsByTagName("vegzettseg");
-                for(int j = 0; j < nList2.getLength(); j++) {
-                    Node n3 = (Element) nList2.item(j);
-                    String degree = n3.getTextContent();
-                    System.out.println("Végzettség: " + degree);
-                }
+                String tagName = "Végzettség";
+                getMultipleValues(nList2, tagName);
 
             }
         }
@@ -125,10 +125,107 @@ public class Y4O4X0DomRead {
                 System.out.println("Részleg: " + part);
 
                 NodeList nList2 = element.getElementsByTagName("vegzettseg");
-
-                getMultipleValues(nList2, name);
+                String tagName = "Végzettség";
+                getMultipleValues(nList2, tagName);
             }
         }
+    }
+
+    private static void printGyakornok(Document doc) {
+        NodeList nList = doc.getElementsByTagName("gyakornok");
+
+        for(int i = 0; i < nList.getLength(); i++) {
+            Node nNode = nList.item(i);
+
+            System.out.println("\nCurrent element: " + nNode.getNodeName());
+
+            if(nNode.getNodeType() == Node.ELEMENT_NODE) {
+                Element element = (Element) nNode;
+
+                String id  = element.getAttribute("gykod");
+
+                Node n1 = element.getElementsByTagName("nev").item(0);
+                String name = n1.getTextContent();
+
+                Node n2 = element.getElementsByTagName("kezdete").item(0);
+                String start = n2.getTextContent();
+
+                Node n3 = element.getElementsByTagName("idotartama").item(0);
+                String duration = n3.getTextContent();
+
+                Node n4 = element.getElementsByTagName("muszak").item(0);
+                String shift = n4.getTextContent();
+
+                System.out.println("Gyakornok id: " + id);
+                System.out.println("Név: " + name);
+                System.out.println("Kezdete: " + start);
+                System.out.println("Idotartama: " + duration);
+                System.out.println("Muszak: " + shift);
+            }
+        }
+    }
+
+    private static void printVendeg(Document doc) {
+        NodeList nList = doc.getElementsByTagName("vendeg");
+
+        for(int i = 0; i < nList.getLength(); i++) {
+            Node nNode = nList.item(i);
+            
+            System.out.println("\nCurrent element: " + nNode.getNodeName());
+            if(nNode.getNodeType() == Node.ELEMENT_NODE) {
+                Element element = (Element) nNode;
+
+                String id = element.getAttribute("vkod");
+
+                Node n1 = element.getElementsByTagName("nev").item(0);
+                String name = n1.getTextContent();
+
+                Node n2 = element.getElementsByTagName("eletkor").item(0);
+                String age = n2.getTextContent();
+
+                Node n3 = element.getElementsByTagName("varos").item(0);
+                String city = n3.getTextContent();
+
+                Node n4 = element.getElementsByTagName("utca").item(0);
+                String street = n4.getTextContent();
+
+                Node n5 = element.getElementsByTagName("hazszam").item(0);
+                String number = n5.getTextContent();
+
+                System.out.println("Vendég id: " + id);
+                System.out.println("Név: " + name);
+                System.out.println("Életkor: " + age);
+                System.out.println("Város: " + city);
+                System.out.println("Utca: " + street);
+                System.out.println("Házszám: " + number);
+            }
+        }
+    }
+
+    private static void printRendeles(Document doc) {
+            NodeList nList = doc.getElementsByTagName("rendeles");
+    
+            for(int i = 0; i < nList.getLength(); i++) {
+                Node nNode = nList.item(i);
+    
+                System.out.println("\nCurrent element: " + nNode.getNodeName());
+    
+                if(nNode.getNodeType() == Node.ELEMENT_NODE) {
+                    Element element = (Element) nNode;
+    
+                    String id = element.getAttribute("e_v_e");
+    
+                    Node n1 = element.getElementsByTagName("osszeg").item(0);
+                    String amount = n1.getTextContent();
+    
+                    Node n2 = element.getElementsByTagName("etel").item(0);
+                    String food = n2.getTextContent();
+    
+                    System.out.println("Rendelés id: " + id);
+                    System.out.println("Összeg: " + amount);
+                    System.out.println("Étel: " + food);
+                }
+            }
     }
 
     private static void getMultipleValues(NodeList nList, String tagName) {
