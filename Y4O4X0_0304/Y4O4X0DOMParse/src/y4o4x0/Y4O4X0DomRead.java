@@ -23,9 +23,18 @@ public class Y4O4X0DomRead {
         doc.getDocumentElement().normalize();
 
         Element root = doc.getDocumentElement();
-        String rooName = root.getTagName();
-        System.out.println("Root element: " + rooName);
+        String rootName = root.getTagName();
+        System.out.println("Root element: " + rootName);
 
+        printEtterem(doc);
+        printFoszakacs(doc);
+        printSzakacs(doc);
+        printGyakornok(doc);
+        printVendeg(doc);
+        printRendeles(doc);
+    }
+
+    private static void printEtterem(Document doc) {
         NodeList nList = doc.getElementsByTagName("etterem");
 
         for(int i = 0; i < nList.getLength(); i++) {
@@ -61,12 +70,6 @@ public class Y4O4X0DomRead {
                 System.out.println("Csillag: " + star);
             }
         }
-
-        printFoszakacs(doc);
-        printSzakacs(doc);
-        printGyakornok(doc);
-        printVendeg(doc);
-        printRendeles(doc);
     }
 
     private static void printFoszakacs(Document doc) {
