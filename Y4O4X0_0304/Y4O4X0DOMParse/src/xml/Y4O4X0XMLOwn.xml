@@ -57,7 +57,7 @@
     <!-- ===== MEGRENDELŐK ===== -->
     <megrendelo mkod="M1">
         <nev>Delta Corp</nev>
-        <hatartido>2025-12-31</hatartido>
+        <hatarido>2025-12-31</hatarido>
         <cim>
             <varos>Budapest</varos>
             <utca>Kossuth Lajos utca</utca>
@@ -67,7 +67,7 @@
 
     <megrendelo mkod="M2">
         <nev>Gamma Solutions</nev>
-        <hatartido>2026-03-01</hatartido>
+        <hatarido>2026-03-01</hatarido>
         <cim>
             <varos>Szeged</varos>
             <utca>Petőfi Sándor utca</utca>
@@ -78,14 +78,15 @@
     <!-- ===== FEJLESZTŐK ===== -->
     <fejleszto fkod="F1" c_f="1">
         <nev>Szabó Dóra</nev>
-        <Reszleg>Backend</Reszleg>
+        <reszleg>Backend</reszleg>
         <fizetes>650000</fizetes>
         <vegzettseg>Programtervező informatikus</vegzettseg>
+        <vegzettseg>Mérnökinformatikus</vegzettseg>
     </fejleszto>
 
     <fejleszto fkod="F2" c_f="2">
         <nev>Horváth Márton</nev>
-        <Reszleg>Frontend</Reszleg>
+        <reszleg>Frontend</reszleg>
         <fizetes>720000</fizetes>
         <vegzettseg>Programozó</vegzettseg>
     </fejleszto>
