@@ -163,7 +163,7 @@ attributeFormDefault="unqualified">
         <xs:complexType name="FejlesztoTipus">
             <xs:sequence>
                 <xs:element name="nev" type="xs:string"/>
-                <xs:element name="Reszleg" type="xs:string"/>
+                <xs:element name="reszleg" type="xs:string"/>
                 <xs:element name="fizetes" type="FizetesTipus"/>
                 <xs:element name="vegzettseg" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
             </xs:sequence>
@@ -174,7 +174,7 @@ attributeFormDefault="unqualified">
         <xs:complexType name="megrendeloTipus">
             <xs:sequence>
                 <xs:element name="nev" type="xs:string"/>
-                <xs:element name="hatartido" type="xs:date"/>
+                <xs:element name="hatarido" type="xs:date"/>
                 <xs:element name="cim" type="CimTipus"/>
             </xs:sequence>
             <xs:attribute name="mkod" type="xs:string" use="required"/>
