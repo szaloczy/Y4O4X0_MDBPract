@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cegek>
+  <ceg ckod="1">
+    <nev>AlphaSoft Kft.</nev>
+    <cim>
+      <varos>Miskolc</varos>
+      <utca>Fő utca</utca>
+      <hazszam>12</hazszam>
+    </cim>
+  </ceg>
+  <ceg ckod="2">
+    <nev>BetaTech Zrt.</nev>
+    <cim>
+      <varos>Debrecen</varos>
+      <utca>Bem tér</utca>
+      <hazszam>8</hazszam>
+    </cim>
+  </ceg>
+</cegek>
