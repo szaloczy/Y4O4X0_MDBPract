@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cegek xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <!-- ===== CÉGEK ===== -->
+    <ceg ckod="1">
+        <nev>AlphaSoft Kft.</nev>
+        <cim>
+            <varos>Miskolc</varos>
+            <utca>Fő utca</utca>
+            <hazszam>12</hazszam>
+        </cim>
+    </ceg>
+
+    <ceg ckod="2">
+        <nev>BetaTech Zrt.</nev>
+        <cim>
+            <varos>Debrecen</varos>
+            <utca>Bem tér</utca>
+            <hazszam>8</hazszam>
+        </cim>
+    </ceg>
+
+    <!-- ===== GYAKORNOKOK ===== -->
+    <gyakornok gykod="GY1" c_gy="1">
+        <nev>Kiss Péter</nev>
+        <gyakorlat>
+            <kezdet>2024-06-01</kezdet>
+            <idotartam>8 hét</idotartam>
+        </gyakorlat>
+        <mentor>Nagy Anna</mentor>
+        <mentor>Szabó Béla</mentor>
+    </gyakornok>
+
+    <gyakornok gykod="GY2" c_gy="2">
+        <nev>Tóth Eszter</nev>
+        <gyakorlat>
+            <kezdet>2024-07-10</kezdet>
+            <idotartam>12 hét</idotartam>
+        </gyakorlat>
+        <mentor>Kovács Imre</mentor>
+    </gyakornok>
+
+    <!-- ===== TULAJDONOSOK ===== -->
+    <tulajdonos tkod="T1" c_t="1">
+        <nev>Nagy László</nev>
+        <eletkor>45</eletkor>
+        <vegzettseg>Mérnök</vegzettseg>
+        <vegzettseg>Közgazdász</vegzettseg>
+    </tulajdonos>
+
+    <tulajdonos tkod="T2" c_t="2">
+        <nev>Kovács Ádám</nev>
+        <eletkor>52</eletkor>
+        <vegzettseg>Informatikus</vegzettseg>
+    </tulajdonos>
+
+    <!-- ===== MEGRENDELŐK ===== -->
+    <megrendelo mkod="M1">
+        <nev>Delta Corp</nev>
+        <hatarido>2025-12-31</hatarido>
+        <cim>
+            <varos>Budapest</varos>
+            <utca>Kossuth Lajos utca</utca>
+            <hazszam>5</hazszam>
+        </cim>
+    </megrendelo>
+
+    <megrendelo mkod="M2">
+        <nev>Gamma Solutions</nev>
+        <hatarido>2026-03-01</hatarido>
+        <cim>
+            <varos>Szeged</varos>
+            <utca>Petőfi Sándor utca</utca>
+            <hazszam>22</hazszam>
+        </cim>
+    </megrendelo>
+
+    <!-- ===== FEJLESZTŐK ===== -->
+    <fejleszto fkod="F1" c_f="1">
+        <nev>Szabó Dóra</nev>
+        <reszleg>Backend</reszleg>
+        <fizetes>650000</fizetes>
+        <vegzettseg>Programtervező informatikus</vegzettseg>
+        <vegzettseg>Mérnökinformatikus</vegzettseg>
+    </fejleszto>
+
+    <fejleszto fkod="F2" c_f="2">
+        <nev>Horváth Márton</nev>
+        <reszleg>Frontend</reszleg>
+        <fizetes>720000</fizetes>
+        <vegzettseg>Programozó</vegzettseg>
+    </fejleszto>
+
+    <!-- ===== PROJEKTEK ===== -->
+    <projekt c_v_p="1" m_p="M1">
+        <nev>Számlázó alkalamzás fejlesztés</nev>
+        <osszeg>5000000</osszeg>
+        <hatarido>2025-10-15</hatarido>
+        <prioritas>Közepes</prioritas>
+    </projekt>
+
+    <projekt c_v_p="2" m_p="M2">
+        <nev>Webshop fejlesztés</nev>
+        <osszeg>12000000</osszeg>
+        <hatarido>2026-01-20</hatarido>
+        <prioritas>Magas</prioritas>
+    </projekt>
+</cegek>
