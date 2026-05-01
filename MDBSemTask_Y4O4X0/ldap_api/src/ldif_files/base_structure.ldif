@@ -1,0 +1,8 @@
+dn: dc=demo,dc=local
+objectClass: top
+objectClass: domain
+dc: demo
+
+dn: ou=people,dc=demo,dc=local
+objectClass: organizationalUnit
+ou: people
