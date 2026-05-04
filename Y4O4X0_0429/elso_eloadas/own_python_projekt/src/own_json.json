@@ -1,0 +1,130 @@
+{
+	"cegek": {
+		"ceg": [
+			{
+				"nev": "AlphaSoft Kft.",
+				"cim": {
+					"varos": "Miskolc",
+					"utca": "Fő utca",
+					"hazszam": "12"
+				},
+				"_ckod": "1"
+			},
+			{
+				"nev": "BetaTech Zrt.",
+				"cim": {
+					"varos": "Debrecen",
+					"utca": "Bem tér",
+					"hazszam": "8"
+				},
+				"_ckod": "2"
+			}
+		],
+		"gyakornok": [
+			{
+				"nev": "Kiss Péter",
+				"gyakorlat": {
+					"kezdet": "2024-06-01",
+					"idotartam": "8 hét"
+				},
+				"mentor": [
+					"Nagy Anna",
+					"Szabó Béla"
+				],
+				"_gykod": "GY1",
+				"_c_gy": "1"
+			},
+			{
+				"nev": "Tóth Eszter",
+				"gyakorlat": {
+					"kezdet": "2024-07-10",
+					"idotartam": "12 hét"
+				},
+				"mentor": "Kovács Imre",
+				"_gykod": "GY2",
+				"_c_gy": "2"
+			}
+		],
+		"tulajdonos": [
+			{
+				"nev": "Nagy László",
+				"eletkor": "45",
+				"vegzettseg": [
+					"Mérnök",
+					"Közgazdász"
+				],
+				"_tkod": "T1",
+				"_c_t": "1"
+			},
+			{
+				"nev": "Kovács Ádám",
+				"eletkor": "52",
+				"vegzettseg": "Informatikus",
+				"_tkod": "T2",
+				"_c_t": "2"
+			}
+		],
+		"megrendelo": [
+			{
+				"nev": "Delta Corp",
+				"hatarido": "2025-12-31",
+				"cim": {
+					"varos": "Budapest",
+					"utca": "Kossuth Lajos utca",
+					"hazszam": "5"
+				},
+				"_mkod": "M1"
+			},
+			{
+				"nev": "Gamma Solutions",
+				"hatarido": "2026-03-01",
+				"cim": {
+					"varos": "Szeged",
+					"utca": "Petőfi Sándor utca",
+					"hazszam": "22"
+				},
+				"_mkod": "M2"
+			}
+		],
+		"fejleszto": [
+			{
+				"nev": "Szabó Dóra",
+				"reszleg": "Backend",
+				"fizetes": "650000",
+				"vegzettseg": [
+					"Programtervező informatikus",
+					"Mérnökinformatikus"
+				],
+				"_fkod": "F1",
+				"_c_f": "1"
+			},
+			{
+				"nev": "Horváth Márton",
+				"reszleg": "Frontend",
+				"fizetes": "720000",
+				"vegzettseg": "Programozó",
+				"_fkod": "F2",
+				"_c_f": "2"
+			}
+		],
+		"projekt": [
+			{
+				"nev": "Számlázó alkalamzás fejlesztés",
+				"osszeg": "5000000",
+				"hatarido": "2025-10-15",
+				"prioritas": "Közepes",
+				"_c_v_p": "1",
+				"_m_p": "M1"
+			},
+			{
+				"nev": "Webshop fejlesztés",
+				"osszeg": "12000000",
+				"hatarido": "2026-01-20",
+				"prioritas": "Magas",
+				"_c_v_p": "2",
+				"_m_p": "M2"
+			}
+		],
+		"_xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance"
+	}
+}
