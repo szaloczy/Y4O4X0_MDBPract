@@ -17,7 +17,7 @@ public class Main {
             );
 
             System.out.println("Sikeres bind!");
-            /*
+/*
             LDAPAttributeSet attrs = new LDAPAttributeSet();
             attrs.add(new LDAPAttribute("objectClass", "organizationalUnit"));
             attrs.add(new LDAPAttribute("ou", "people"));
@@ -36,7 +36,7 @@ public class Main {
             attrs.add(new LDAPAttribute("userPassword", "1234"));
 
             conn.add(new LDAPEntry(dn, attrs));
-            */
+*/
 
             String base = "ou=people,dc=demo,dc=local";
             String filter = "(uid=john)";
@@ -69,7 +69,7 @@ public class Main {
             System.out.println("Sikeres módosítás!");
 
             // DN törlése
-            conn.delete(dn);
+            //conn.delete(dn);
 
             conn.disconnect();
         } catch (LDAPException e) {
