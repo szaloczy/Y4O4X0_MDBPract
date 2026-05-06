@@ -79,7 +79,6 @@ print("Éttermek sikeresen feltöltve.")
 
 
 
-
 #Éttermek lekérdezése
 print("\n --- 2.a) Összes étterem ---")
 for etterem in etterem_coll.find():
